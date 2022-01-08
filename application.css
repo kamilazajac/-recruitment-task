@@ -49,12 +49,35 @@ a {
   background-color: #fff;
   margin-bottom: 4px;
 }
-.main__heading {
+.contact__info {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  color: #5c5b5b;
+  font-family: 'Avenir Next Medium', sans-serif;
+  text-decoration: none;
+}
+.main {
+  width: 1024px;
+  margin: 0 auto;
+}
+.main__heading {
+  text-align: center;
 }
 .main__heading-image {
   height: 220px;
+}
+.contact__info-header {
+  font-size: 2vw;
+  font-weight: lighter;
+}
+.address {
+  font-style: normal;
+  font-size: 1vw;
+}
+.mail {
+  color: #5c5b5b;
 }
 
 .banner {
@@ -130,8 +153,30 @@ a {
   height: 100px;
 }
 .program-info {
-  font-family: 'Archivo', sans-serif;
   color: #5c5b5b;
+  font-family: 'Avenir Next Medium', sans-serif;
+}
+.description-div1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+.description {
+  font-size: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
+.description__header {
+  font-weight: lighter;
+}
+.description__paragraph {
+  font-weight: bold;
+}
+.description-div2 {
+  margin-top: 130px;
+}
+.bolder {
+  font-weight: bold;
 }
 .open-img {
   margin-right: 10px;
@@ -144,6 +189,9 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
+  font-size: 50px;
+  font-family: 'Avenir Next Medium', sans-serif;
 }
 .program__opening {
   display: flex;
@@ -153,29 +201,43 @@ a {
 }
 .program__opening-info {
   font-size: 20px;
-  flex: 1 1 auto;
 }
-
-.description-grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about {
+  font-size: 40px;
   width: 100%;
-  height: 400px;
-  padding: 30px;
+  padding: 50px;
 }
-.description {
-  font-size: 26px;
+.about-image {
+  width: 50%;
+  height: 50%;
+  padding: 40px;
 }
-.description__header {
-  font-weight: none;
+.about-column {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+  
 }
-
+.about-column2 {
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 1;
+}
+.about-paragraph {
+  padding: 20px;
+  te
+}
+.about-header {
+  
+}
 .program-info__more {
   text-align: center;
+  font-size: 26px;
 }
 .contact__reference {
   text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
 }
 .contact-__reference-link {
   color: #5c5b5b;
@@ -206,13 +268,14 @@ a {
   height: 50px;
   padding: 12px;
 }
-
-.location{
-  text-align: center;
+.location-header {
+  font-family: 'Avenir Next Medium', sans-serif;
 }
-.location-image{
-  width: 50%;
-  
+
+.location-image {
+  width: 100%;
+  margin-bottom: 36px;
+  margin-top: 36px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -247,7 +310,12 @@ a {
     position: absolute;
     top: 300px;
     left: 0;
-    font-size: 1.5em;
+    font-size: 2em;
+  }
+  .hero-section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 
@@ -258,9 +326,14 @@ a {
     left: 0;
     font-size: 1em;
   }
-}
+  .hero-section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+  }
 
-.paragraph {
-  width: 70%;
-  font-size: 2em;
+  .paragraph {
+    width: 70%;
+    font-size: 2em;
+  }
 }
